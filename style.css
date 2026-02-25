@@ -1,17 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /*
 Theme Name: School Custom Theme
-Theme URI: 
+Theme URI:
 Author: krishiv,Ry,Hugo
-Author URI: 
+Author URI:
 Description: Custom block theme for School Site assignment
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 5.7
-Version: 
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: school-custom-theme
-Tags: 
+Tags:
 */
 
+/* ==================================================
+   1. RESET / NORMALIZE
+================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==================================================
+   2. GLOBAL STYLES
+================================================== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==================================================
+   3. HEADER STYLING
+================================================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.wp-block-navigation a {
+  font-weight: 500;
+}
+
+/* ==================================================
+   4. BUTTON IMPROVEMENTS
+================================================== */
+
+.wp-block-button__link {
+  transition: all 0.3s ease;
+}
+
+.wp-block-button__link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   5. ACCESSIBILITY
+================================================== */
+
+a:focus,
+button:focus {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* ==================================================
+   6. RESPONSIVE DESIGN
+================================================== */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .wp-block-navigation {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
