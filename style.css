@@ -16,9 +16,9 @@ Text Domain: school-custom-theme
 Tags:
 */
 
-/* ==================================================
-   1. RESET / NORMALIZE
-================================================== */
+/* =========================
+   RESET / NORMALIZE
+========================= */
 
 *,
 *::before,
@@ -37,9 +37,9 @@ img {
   display: block;
 }
 
-/* ==================================================
-   2. GLOBAL STYLES
-================================================== */
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -48,14 +48,19 @@ body {
   color: #222;
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* ==================================================
-   3. HEADER STYLING
-================================================== */
+/* =========================
+   STICKY HEADER
+========================= */
 
 header {
   position: sticky;
@@ -64,15 +69,20 @@ header {
   background: #ffffff;
   padding: 20px 40px;
   border-bottom: 1px solid #eee;
+  transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 .wp-block-navigation a {
   font-weight: 500;
 }
 
-/* ==================================================
-   4. BUTTON IMPROVEMENTS
-================================================== */
+/* =========================
+   BUTTON IMPROVEMENTS
+========================= */
 
 .wp-block-button__link {
   transition: all 0.3s ease;
@@ -83,9 +93,9 @@ header {
   transform: translateY(-2px);
 }
 
-/* ==================================================
-   5. ACCESSIBILITY
-================================================== */
+/* =========================
+   ACCESSIBILITY
+========================= */
 
 a:focus,
 button:focus {
@@ -93,9 +103,9 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* ==================================================
-   6. RESPONSIVE DESIGN
-================================================== */
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 
 @media (max-width: 1024px) {
   header {
@@ -104,17 +114,19 @@ button:focus {
 }
 
 @media (max-width: 768px) {
+
   header {
     padding: 15px;
   }
 
   .wp-block-navigation {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
+
   body {
     font-size: 14px;
   }
