@@ -1,0 +1,43 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<main class="wp-block-group" style="padding:60px 20px">
+
+<!-- Post Listing -->
+<!-- wp:query {"queryId":1,"query":{"perPage":6,"postType":"post"},"layout":{"inherit":true}} -->
+<div class="wp-block-query">
+
+<!-- Post Template -->
+<!-- wp:post-template -->
+
+<div style="padding:30px; border-bottom:1px solid #eee">
+
+<!-- Post Title -->
+<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
+
+<!-- Featured Image -->
+<!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- Excerpt -->
+<!-- wp:post-excerpt /-->
+
+</div>
+
+<!-- /wp:post-template -->
+
+<!-- Pagination -->
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+</div>
+<!-- /wp:query -->
+
+<!-- ⭐ Widget Before Footer Pattern -->
+<!-- wp:pattern {"slug":"school-custom-theme/footer-widget"} /-->
+
+</main>
+
+<!-- Footer -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

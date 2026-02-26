@@ -131,3 +131,37 @@ button:focus {
     font-size: 14px;
   }
 }
+/* Header hover shadow effect */
+header {
+  transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* Navigation spacing improvement */
+.wp-block-navigation a {
+  font-weight: 500;
+}
+
+/* Logo alignment safety */
+.wp-block-site-logo img {
+  display: block;
+}
+/* Header Polish */
+.wp-block-group.alignfull {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Navigation spacing */
+.wp-block-navigation {
+    justify-content: flex-end;
+}
+
+/* Footer polish */
+footer, .wp-block-group.has-background {
+    width: 100%;
+    text-align: center;
+}

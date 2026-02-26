@@ -1,0 +1,27 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<main class="wp-block-group" style="padding:60px 20px; max-width:900px; margin:auto">
+
+<h1>Search Results</h1>
+
+<!-- wp:query {"query":{"perPage":6,"postType":"post"},"layout":{"inherit":true}} -->
+<div class="wp-block-query">
+
+<!-- wp:post-template -->
+
+<div style="padding:30px; border-bottom:1px solid #eee">
+
+<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
+
+<!-- wp:post-excerpt /-->
+
+</div>
+
+<!-- /wp:post-template -->
+
+</div>
+<!-- /wp:query -->
+
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
